@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    ">
+    <title>Valyuta</title>
+</head>
+<body class="text-bg-dark">
+    <div class="container">
+        <h2 class="text-center text-success my-5">Currency Converter</h2>
+        <form class="js-form-currency" action="">
+            <div class="d-flex justify-content-center align-item-center mb-3">
+                <input class="form-control js-input-currency w-25 " type="text" placeholder="Enter Your money" min="1" required>
+                <select class="js-currency-select form-select w-25 me-2 ms-2">
+                    <option hidden value="0">Select Currency</option>
+                    <option value="11300">USD</option>
+                    <option value="12260">EUR</option>
+                    <option value="160">RUB</option>
+                    <option value="1668">CNY</option>
+                </select>
+                <output class="d-block w-25 border p-2 rounded">
+                    <span class="bg-success text-white js-result rounded badge">0</span> so'm
+                </output>
+            </div>
+            <button class="btn btn-success position-relative start-50 translate-middle-x" type="submit">Convert</button>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>
